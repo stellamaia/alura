@@ -1,0 +1,83 @@
+
+<div id="app">
+    <h1>{{ titulo }}</h1>
+    <input type="text" v-model="input">
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+<script>
+    var app = new Vue({
+        el: '#app',
+        data : {
+            titulo : 'Página de Cursos'
+        }
+    });
+</script>
+
+
+
+
+
+
+
+
+<!--
+    two-way data binding, é o termo dado a reatividade dos elememtos na sua interface, ou seja, o que acontece no DOM (View), reflete no JavaScript(Model), e o que acontece 
+    no JavaScript(Model), reflete no DOM(view)
+    Ex:
+
+    html
+
+    <h3>Two-way data binding com JavaScript puro</h3>
+    <input type="text" id="input" onkeyup="entrandoComDados(this.value)">
+    <p id="saida"></p>
+
+
+    javaScript:
+
+    function entrandoComDados(value){
+        document.getElementById("saida").innerHtml = value;
+    }
+
+
+    **********************************
+    Vue.js
+
+    <div id="app">
+        <h3> Two-way data binding com Vue.js</h3>
+        <input type="text" v-model="input">
+        <p>{{ input }}</p>
+    </div>
+
+    var vm = new Vue({
+        el: '#app',
+        data:{
+            input:''
+        }
+    });
+
+
+    ESTÁ IMPLEMENTANDO O TWO-WAY DATA BINDING, ENTRE O INPUT E A MINHA TAG P
+
+    new Vue({}) : É a instancia de um objeto Vue.É dentro dos colchetes(por isso que é um objeto), que a mágica acontece.
+
+    el : É um atributo de Vue que faz uma ligação com o componente que você quer ligar no seu HTML.É equivalente ao document.getElementById()do JavaScript.
+
+    data: É um objeto,dentro de sua instanciação de Vue, que receberá as variáveis que serão "chamadas" no seu HTML.
+
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+<script src="teste.vue"></script>
+</html>
+
+
